@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Error < BaseObject
     attr_accessor :error, :message

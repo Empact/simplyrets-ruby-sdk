@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Property < BaseObject
     attr_accessor :roof, :style, :area, :area_source, :baths_full, :baths_half, :stories, :fireplaces, :heating, :bedrooms, :interior_features, :lot_size, :exterior_features, :subdivision, :type, :year_built, :additional_rooms, :maintenance_expense, :garage_spaces, :pool_features, :lot_description, :occupant_type, :occupant_name, :foundation, :laundry_features, :construction_materials, :view, :water, :accessibility, :parking

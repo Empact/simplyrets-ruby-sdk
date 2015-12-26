@@ -1,6 +1,6 @@
 require "uri"
 
-module SimplyRetsClient
+module SimplyRets
   class Properties_api
 
     # The SimplyRets Listings API

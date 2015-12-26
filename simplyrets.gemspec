@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "simplyrets/simplyrets/version"
+require "simplyrets/version"
 
 Gem::Specification.new do |s|
 
   s.name        = "simplyrets"
-  s.version     = SimplyRetsClient::SimplyRets::VERSION
+  s.version     = SimplyRets::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Christopher Reichert", "Cody Reichert"]
   s.email       = ["christopher@simplyrets.com", "cody@simplyrets.com"]

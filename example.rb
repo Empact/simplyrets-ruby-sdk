@@ -7,7 +7,7 @@ require "simplyrets"
 
 p "SimplyRets Ruby SDK"
 
-SimplyRetsClient::SimplyRets.configure do |config|
+SimplyRets.configure do |config|
   config.username = 'simplyrets'
   config.password = 'simplyrets'
 end

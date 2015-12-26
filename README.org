@@ -31,7 +31,7 @@ applications and websites with Real Estate data.
      require "properties_api"
      require "listing"
 
-     SimplyRetsClient::SimplyRets.configure do |config|
+     SimplyRets.configure do |config|
        config.username = 'simplyrets'
        config.password = 'simplyrets'
      end
@@ -52,7 +52,7 @@ applications and websites with Real Estate data.
    #+BEGIN_SRC ruby
      require 'simplyrets'
 
-     SimplyRetsClient::SimplyRets.configure do |config|
+     SimplyRets.configure do |config|
        config.username = 'simplyrets'
        config.password = 'simplyrets'
      end

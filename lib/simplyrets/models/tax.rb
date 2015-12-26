@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Tax < BaseObject
     attr_accessor :id, :annual_amount, :year

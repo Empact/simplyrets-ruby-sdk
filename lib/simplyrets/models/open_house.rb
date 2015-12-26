@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class OpenHouse < BaseObject
     attr_accessor :startdate
