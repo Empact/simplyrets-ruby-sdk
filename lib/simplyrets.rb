@@ -4,6 +4,7 @@ require 'simplyrets/api_error'
 require 'simplyrets/request'
 require 'simplyrets/response'
 require 'simplyrets/version'
+require 'simplyrets/list'
 
 # Models
 require 'simplyrets/models/base_object'

@@ -94,7 +94,7 @@ module SimplyRets
 
       auth_names = ['basicAuth']
       response = SimplyRets::Request.new(:GET, path, {:params => query_params, :headers => header_params, :form_params => form_params, :body => post_body, :auth_names => auth_names}).make
-      result = response.deserialize('Array<Listing>')
+      result = SimplyRets::List.new(response)
       if SimplyRets.configuration.debug
         SimplyRets.logger.debug "API called: DefaultApi#properties. Result: #{result.inspect}"
       end
