@@ -7,13 +7,13 @@ module SimplyRets
       {
 
         # Contact Information Office Phone Number
-        :'office' => :'office',
+        :office => :office,
 
         # Contact Information Cell Phone
-        :'cell' => :'cell',
+        :cell => :cell,
 
         # Full pretty-printed address with suffix (if available)
-        :'full' => :'full'
+        :full => :full
 
       }
     end
@@ -21,9 +21,9 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'office' => :'String',
-        :'cell' => :'String',
-        :'full' => :'String'
+        :office => :String,
+        :cell => :String,
+        :full => :String
 
       }
     end
@@ -35,16 +35,16 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'office']
-        self.office = attributes[:'office']
+      if attributes[:office]
+        self.office = attributes[:office]
       end
 
-      if attributes[:'cell']
-        self.cell = attributes[:'cell']
+      if attributes[:cell]
+        self.cell = attributes[:cell]
       end
 
-      if attributes[:'full']
-        self.full = attributes[:'full']
+      if attributes[:full]
+        self.full = attributes[:full]
       end
 
     end

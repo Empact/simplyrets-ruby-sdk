@@ -7,16 +7,16 @@ module SimplyRets
       {
 
         #
-        :'contact' => :'contact',
+        :contact => :contact,
 
         # Pimary office name
-        :'name' => :'name',
+        :name => :name,
 
         # Primary office or brokerage name
-        :'serving_name' => :'servingName',
+        :serving_name => :servingName,
 
         # Office or brokerage MLS identifier
-        :'brokerid' => :'brokerid'
+        :brokerid => :brokerid
 
       }
     end
@@ -24,10 +24,10 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'contact' => :'ContactInformation',
-        :'name' => :'String',
-        :'serving_name' => :'String',
-        :'brokerid' => :'String'
+        :contact => :ContactInformation,
+        :name => :String,
+        :serving_name => :String,
+        :brokerid => :String
 
       }
     end
@@ -39,20 +39,20 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'contact']
-        self.contact = attributes[:'contact']
+      if attributes[:contact]
+        self.contact = attributes[:contact]
       end
 
-      if attributes[:'name']
-        self.name = attributes[:'name']
+      if attributes[:name]
+        self.name = attributes[:name]
       end
 
-      if attributes[:'servingName']
-        self.serving_name = attributes[:'servingName']
+      if attributes[:servingName]
+        self.serving_name = attributes[:servingName]
       end
 
-      if attributes[:'brokerid']
-        self.brokerid = attributes[:'brokerid']
+      if attributes[:brokerid]
+        self.brokerid = attributes[:brokerid]
       end
 
     end

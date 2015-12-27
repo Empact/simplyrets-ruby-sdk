@@ -7,7 +7,7 @@ module SimplyRets
       {
 
         # Start Date
-        :'startdate' => :'startdate'
+        :startdate => :startdate
 
       }
     end
@@ -15,7 +15,7 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'startdate' => :'DateTime'
+        :startdate => :DateTime
 
       }
     end
@@ -27,8 +27,8 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'startdate']
-        self.startdate = attributes[:'startdate']
+      if attributes[:startdate]
+        self.startdate = attributes[:startdate]
       end
 
     end

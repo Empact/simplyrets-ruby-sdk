@@ -34,15 +34,15 @@ module SimplyRets
         SimplyRets.logger.debug "Calling API: DefaultApi#properties ..."
       end
 
-      if opts[:'type'] && !['Residential', 'Rental', 'Multifamily', 'Condominium', 'Commercial', 'Land'].include?(opts[:'type'])
+      if opts[:type] && !['Residential', 'Rental', 'Multifamily', 'Condominium', 'Commercial', 'Land'].include?(opts[:type])
         fail 'invalid value for "type", must be one of Residential, Rential, Multifamily, Condominium, Commercial, Land'
       end
 
-      if opts[:'sort'] && !['listprice', '-listprice', 'listdate', '-listdate', 'beds', '-beds', 'baths', '-baths'].include?(opts[:'sort'])
+      if opts[:sort] && !['listprice', '-listprice', 'listdate', '-listdate', 'beds', '-beds', 'baths', '-baths'].include?(opts[:sort])
         fail 'invalid value for "sort", must be one of listprice, -listprice, listdate, -listdate, beds, -beds, baths, -baths'
       end
 
-      if opts[:'include'] && !['pool', 'rooms', 'association'].include?(opts[:'include'])
+      if opts[:include] && !['pool', 'rooms', 'association'].include?(opts[:include])
         fail 'invalid value for "include", must be one of pool, rooms, association'
       end
 
@@ -51,28 +51,28 @@ module SimplyRets
 
       # query parameters
       query_params = {}
-      query_params[:'q'] = opts[:'q'] if opts[:'q']
-      query_params[:'minprice'] = opts[:'minprice'] if opts[:'minprice']
-      query_params[:'maxprice'] = opts[:'maxprice'] if opts[:'maxprice']
-      query_params[:'agent'] = opts[:'agent'] if opts[:'agent']
-      query_params[:'minarea'] = opts[:'minarea'] if opts[:'minarea']
-      query_params[:'maxarea'] = opts[:'maxarea'] if opts[:'maxarea']
-      query_params[:'minbaths'] = opts[:'minbaths'] if opts[:'minbaths']
-      query_params[:'maxbaths'] = opts[:'maxbaths'] if opts[:'maxbaths']
-      query_params[:'minbeds'] = opts[:'minbeds'] if opts[:'minbeds']
-      query_params[:'maxbeds'] = opts[:'maxbeds'] if opts[:'maxbeds']
-      query_params[:'limit'] = opts[:'limit'] if opts[:'limit']
-      query_params[:'offset'] = opts[:'offset'] if opts[:'offset']
-      query_params[:'brokers'] = opts[:'brokers'] if opts[:'brokers']
-      query_params[:'features'] = opts[:'features'] if opts[:'features']
-      query_params[:'amenities'] = opts[:'amenities'] if opts[:'amenities']
-      query_params[:'neighborhoods'] = opts[:'neighborhoods'] if opts[:'neighborhoods']
-      query_params[:'points'] = opts[:'points'] if opts[:'points']
-      query_params[:'counties'] = opts[:'counties'] if opts[:'counties']
-      query_params[:'status'] = opts[:'status'] if opts[:'status']
-      query_params[:'type'] = opts[:'type'] if opts[:'type']
-      query_params[:'sort'] = opts[:'sort'] if opts[:'sort']
-      query_params[:'include'] = opts[:'include'] if opts[:'include']
+      query_params[:q] = opts[:q] if opts[:q]
+      query_params[:minprice] = opts[:minprice] if opts[:minprice]
+      query_params[:maxprice] = opts[:maxprice] if opts[:maxprice]
+      query_params[:agent] = opts[:agent] if opts[:agent]
+      query_params[:minarea] = opts[:minarea] if opts[:minarea]
+      query_params[:maxarea] = opts[:maxarea] if opts[:maxarea]
+      query_params[:minbaths] = opts[:minbaths] if opts[:minbaths]
+      query_params[:maxbaths] = opts[:maxbaths] if opts[:maxbaths]
+      query_params[:minbeds] = opts[:minbeds] if opts[:minbeds]
+      query_params[:maxbeds] = opts[:maxbeds] if opts[:maxbeds]
+      query_params[:limit] = opts[:limit] if opts[:limit]
+      query_params[:offset] = opts[:offset] if opts[:offset]
+      query_params[:brokers] = opts[:brokers] if opts[:brokers]
+      query_params[:features] = opts[:features] if opts[:features]
+      query_params[:amenities] = opts[:amenities] if opts[:amenities]
+      query_params[:neighborhoods] = opts[:neighborhoods] if opts[:neighborhoods]
+      query_params[:points] = opts[:points] if opts[:points]
+      query_params[:counties] = opts[:counties] if opts[:counties]
+      query_params[:status] = opts[:status] if opts[:status]
+      query_params[:type] = opts[:type] if opts[:type]
+      query_params[:sort] = opts[:sort] if opts[:sort]
+      query_params[:include] = opts[:include] if opts[:include]
 
       # header parameters
       header_params = {}

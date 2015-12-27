@@ -7,19 +7,19 @@ module SimplyRets
       {
 
         # RETS Sales data agent id
-        :'agent' => :'agent',
+        :agent => :agent,
 
         # RETS Sales data close date
-        :'close_date' => :'closeDate',
+        :close_date => :closeDate,
 
         # RETS Sales data sold price
-        :'close_price' => :'closePrice',
+        :close_price => :closePrice,
 
         # RETS Sales data contract date
-        :'contract_date' => :'contractDate',
+        :contract_date => :contractDate,
 
         # RETS Sales data selling office/brokerage id
-        :'office' => :'office'
+        :office => :office
 
       }
     end
@@ -27,11 +27,11 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'agent' => :'String',
-        :'close_date' => :'DateTime',
-        :'close_price' => :'Integer',
-        :'contract_date' => :'DateTime',
-        :'office' => :'String'
+        :agent => :String,
+        :close_date => :DateTime,
+        :close_price => :Integer,
+        :contract_date => :DateTime,
+        :office => :String
 
       }
     end
@@ -43,24 +43,24 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'agent']
-        self.agent = attributes[:'agent']
+      if attributes[:agent]
+        self.agent = attributes[:agent]
       end
 
-      if attributes[:'closeDate']
-        self.close_date = attributes[:'closeDate']
+      if attributes[:closeDate]
+        self.close_date = attributes[:closeDate]
       end
 
-      if attributes[:'closePrice']
-        self.close_price = attributes[:'closePrice']
+      if attributes[:closePrice]
+        self.close_price = attributes[:closePrice]
       end
 
-      if attributes[:'contractDate']
-        self.contract_date = attributes[:'contractDate']
+      if attributes[:contractDate]
+        self.contract_date = attributes[:contractDate]
       end
 
-      if attributes[:'office']
-        self.office = attributes[:'office']
+      if attributes[:office]
+        self.office = attributes[:office]
       end
 
     end

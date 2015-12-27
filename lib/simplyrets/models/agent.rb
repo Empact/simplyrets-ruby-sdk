@@ -7,16 +7,16 @@ module SimplyRets
       {
 
         # Agent last name
-        :'last_name' => :'lastName',
+        :last_name => :lastName,
 
         # Agent contact info. This information is only present when\nyour RETS feed specifies the agent wishes to show their\ncontact information publicly.\n
-        :'contact' => :'contact',
+        :contact => :contact,
 
         # Agent first name
-        :'first_name' => :'firstName',
+        :first_name => :firstName,
 
         # Well known Agent MLS number or id.
-        :'id' => :'id'
+        :id => :id
 
       }
     end
@@ -24,10 +24,10 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'last_name' => :'String',
-        :'contact' => :'ContactInformation',
-        :'first_name' => :'String',
-        :'id' => :'String'
+        :last_name => :String,
+        :contact => :ContactInformation,
+        :first_name => :String,
+        :id => :String
 
       }
     end
@@ -39,20 +39,20 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'lastName']
-        self.last_name = attributes[:'lastName']
+      if attributes[:lastName]
+        self.last_name = attributes[:lastName]
       end
 
-      if attributes[:'contact']
-        self.contact = attributes[:'contact']
+      if attributes[:contact]
+        self.contact = attributes[:contact]
       end
 
-      if attributes[:'firstName']
-        self.first_name = attributes[:'firstName']
+      if attributes[:firstName]
+        self.first_name = attributes[:firstName]
       end
 
-      if attributes[:'id']
-        self.id = attributes[:'id']
+      if attributes[:id]
+        self.id = attributes[:id]
       end
 
     end

@@ -7,19 +7,19 @@ module SimplyRets
       {
 
         # Listing county
-        :'county' => :'county',
+        :county => :county,
 
         # Listing latitude (if available)
-        :'lat' => :'lat',
+        :lat => :lat,
 
         # Listing longitude (if available)
-        :'lng' => :'lng',
+        :lng => :lng,
 
         # Listing GeoMarket area. May be the same as mlsArea
-        :'market_area' => :'marketArea',
+        :market_area => :marketArea,
 
         # Directions to the property
-        :'directions' => :'directions'
+        :directions => :directions
 
       }
     end
@@ -27,11 +27,11 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'county' => :'String',
-        :'lat' => :'Float',
-        :'lng' => :'Float',
-        :'market_area' => :'String',
-        :'directions' => :'String'
+        :county => :String,
+        :lat => :Float,
+        :lng => :Float,
+        :market_area => :String,
+        :directions => :String
 
       }
     end
@@ -43,24 +43,24 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'county']
-        self.county = attributes[:'county']
+      if attributes[:county]
+        self.county = attributes[:county]
       end
 
-      if attributes[:'lat']
-        self.lat = attributes[:'lat']
+      if attributes[:lat]
+        self.lat = attributes[:lat]
       end
 
-      if attributes[:'lng']
-        self.lng = attributes[:'lng']
+      if attributes[:lng]
+        self.lng = attributes[:lng]
       end
 
-      if attributes[:'marketArea']
-        self.market_area = attributes[:'marketArea']
+      if attributes[:marketArea]
+        self.market_area = attributes[:marketArea]
       end
 
-      if attributes[:'directions']
-        self.directions = attributes[:'directions']
+      if attributes[:directions]
+        self.directions = attributes[:directions]
       end
 
     end

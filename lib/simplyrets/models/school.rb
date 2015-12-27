@@ -7,16 +7,16 @@ module SimplyRets
       {
 
         # School district name.
-        :'district' => :'district',
+        :district => :district,
 
         # Elementary school name.
-        :'elementary_school' => :'elementarySchool',
+        :elementary_school => :elementarySchool,
 
         # Middle or junior school name
-        :'middle_school' => :'middleSchool',
+        :middle_school => :middleSchool,
 
         # High school name
-        :'high_school' => :'highSchool'
+        :high_school => :highSchool
 
       }
     end
@@ -24,10 +24,10 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'district' => :'String',
-        :'elementary_school' => :'String',
-        :'middle_school' => :'String',
-        :'high_school' => :'String'
+        :district => :String,
+        :elementary_school => :String,
+        :middle_school => :String,
+        :high_school => :String
 
       }
     end
@@ -39,20 +39,20 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'district']
-        self.district = attributes[:'district']
+      if attributes[:district]
+        self.district = attributes[:district]
       end
 
-      if attributes[:'elementarySchool']
-        self.elementary_school = attributes[:'elementarySchool']
+      if attributes[:elementarySchool]
+        self.elementary_school = attributes[:elementarySchool]
       end
 
-      if attributes[:'middleSchool']
-        self.middle_school = attributes[:'middleSchool']
+      if attributes[:middleSchool]
+        self.middle_school = attributes[:middleSchool]
       end
 
-      if attributes[:'highSchool']
-        self.high_school = attributes[:'highSchool']
+      if attributes[:highSchool]
+        self.high_school = attributes[:highSchool]
       end
 
     end

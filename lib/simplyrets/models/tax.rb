@@ -7,13 +7,13 @@ module SimplyRets
       {
 
         # Tax Parcel ID for the listing
-        :'id' => :'id',
+        :id => :id,
 
         # Annual tax amount in USD
-        :'annual_amount' => :'annualAmount',
+        :annual_amount => :annualAmount,
 
         # Tax Year
-        :'year' => :'year'
+        :year => :year
 
       }
     end
@@ -21,9 +21,9 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'id' => :'String',
-        :'annual_amount' => :'String',
-        :'year' => :'Integer'
+        :id => :String,
+        :annual_amount => :String,
+        :year => :Integer
 
       }
     end
@@ -35,16 +35,16 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'id']
-        self.id = attributes[:'id']
+      if attributes[:id]
+        self.id = attributes[:id]
       end
 
-      if attributes[:'annualAmount']
-        self.annual_amount = attributes[:'annualAmount']
+      if attributes[:annualAmount]
+        self.annual_amount = attributes[:annualAmount]
       end
 
-      if attributes[:'year']
-        self.year = attributes[:'year']
+      if attributes[:year]
+        self.year = attributes[:year]
       end
 
     end

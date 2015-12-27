@@ -7,10 +7,10 @@ module SimplyRets
       {
 
         # Error code. In general, we try to adhere to HTTP status code\nand use these error statuses for detailed reporting.\n
-        :'error' => :'error',
+        :error => :error,
 
         # Status message with an explanation of the error
-        :'message' => :'message'
+        :message => :message
 
       }
     end
@@ -18,8 +18,8 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'error' => :'Integer',
-        :'message' => :'String'
+        :error => :Integer,
+        :message => :String
 
       }
     end
@@ -31,12 +31,12 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'error']
-        self.error = attributes[:'error']
+      if attributes[:error]
+        self.error = attributes[:error]
       end
 
-      if attributes[:'message']
-        self.message = attributes[:'message']
+      if attributes[:message]
+        self.message = attributes[:message]
       end
 
     end

@@ -7,13 +7,13 @@ module SimplyRets
       {
 
         # Number of parking spaces
-        :'spaces' => :'spaces',
+        :spaces => :spaces,
 
         # Parking features description
-        :'description' => :'description',
+        :description => :description,
 
         #
-        :'leased' => :'leased'
+        :leased => :leased
 
       }
     end
@@ -21,9 +21,9 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'spaces' => :'Integer',
-        :'description' => :'String',
-        :'leased' => :'String'
+        :spaces => :Integer,
+        :description => :String,
+        :leased => :String
 
       }
     end
@@ -35,16 +35,16 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'spaces']
-        self.spaces = attributes[:'spaces']
+      if attributes[:spaces]
+        self.spaces = attributes[:spaces]
       end
 
-      if attributes[:'description']
-        self.description = attributes[:'description']
+      if attributes[:description]
+        self.description = attributes[:description]
       end
 
-      if attributes[:'leased']
-        self.leased = attributes[:'leased']
+      if attributes[:leased]
+        self.leased = attributes[:leased]
       end
 
     end

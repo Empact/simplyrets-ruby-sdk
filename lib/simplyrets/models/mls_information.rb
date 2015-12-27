@@ -7,16 +7,16 @@ module SimplyRets
       {
 
         # MLS Status Code. Compliant with data dictionary v1.3 ListingStatus
-        :'status' => :'status',
+        :status => :status,
 
         # MLS Area. Generally a subdivision or community name.
-        :'area' => :'area',
+        :area => :area,
 
         # Amount of days the property has been Active
-        :'days_on_market' => :'daysOnMarket',
+        :days_on_market => :daysOnMarket,
 
         # Alias for the listing office or brokerage
-        :'serving_name' => :'servingName'
+        :serving_name => :servingName
 
       }
     end
@@ -24,10 +24,10 @@ module SimplyRets
     # attribute type
     def self.simplyrets_types
       {
-        :'status' => :'String',
-        :'area' => :'String',
-        :'days_on_market' => :'Integer',
-        :'serving_name' => :'String'
+        :status => :String,
+        :area => :String,
+        :days_on_market => :Integer,
+        :serving_name => :String
 
       }
     end
@@ -39,20 +39,20 @@ module SimplyRets
       attributes = attributes.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
 
 
-      if attributes[:'status']
-        self.status = attributes[:'status']
+      if attributes[:status]
+        self.status = attributes[:status]
       end
 
-      if attributes[:'area']
-        self.area = attributes[:'area']
+      if attributes[:area]
+        self.area = attributes[:area]
       end
 
-      if attributes[:'daysOnMarket']
-        self.days_on_market = attributes[:'daysOnMarket']
+      if attributes[:daysOnMarket]
+        self.days_on_market = attributes[:daysOnMarket]
       end
 
-      if attributes[:'servingName']
-        self.serving_name = attributes[:'servingName']
+      if attributes[:servingName]
+        self.serving_name = attributes[:servingName]
       end
 
     end
