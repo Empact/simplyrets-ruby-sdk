@@ -1,6 +1,6 @@
 require 'date'
 
-module SimplyRetsClient
+module SimplyRets
   # base class containing fundamental method such as to_hash, build_from_hash and more
   class BaseObject
 
@@ -43,7 +43,7 @@ module SimplyRetsClient
           false
         end
       else # model
-        _model = SimplyRetsClient.const_get(type).new
+        _model = SimplyRets.const_get(type).new
         _model.build_from_hash(value)
       end
     end

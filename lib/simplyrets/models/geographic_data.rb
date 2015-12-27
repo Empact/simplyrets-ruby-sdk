@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class GeographicData < BaseObject
     attr_accessor :county, :lat, :lng, :market_area, :directions

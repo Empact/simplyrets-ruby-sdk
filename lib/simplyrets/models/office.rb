@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Office < BaseObject
     attr_accessor :contact, :name, :serving_name, :brokerid

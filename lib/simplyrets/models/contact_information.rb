@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class ContactInformation < BaseObject
     attr_accessor :office, :cell, :full

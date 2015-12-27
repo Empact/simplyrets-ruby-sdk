@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class StreetAddress < BaseObject
     attr_accessor :country, :postal_code, :street_name, :city, :street_number, :full, :cross_street

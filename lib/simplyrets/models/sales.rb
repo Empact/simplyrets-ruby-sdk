@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Sales < BaseObject
     attr_accessor :agent, :close_date, :close_price, :contract_date, :office

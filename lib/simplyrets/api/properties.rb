@@ -1,7 +1,7 @@
 require "uri"
 
 module SimplyRets
-  class Properties_api
+  class Properties
 
     # The SimplyRets Listings API
     # This is the main endpoint for accessing your properties. View\nall of the available query parameters and make requests below!\nThe API uses Basic Authorization, which most HTTP libraries\nwill handle for you. To use the test test data (which is what\nthis pages uses), you can use the api key `simplyrets` and\nsecret `simplyrets`. Note that the test listings are not live\nMLS listings but the data, query parameters, and response\nbodies will all work the same.\n
@@ -29,7 +29,7 @@ module SimplyRets
     # @option opts [String] :sort Sort the response by a specific field. Values starting\nwith a minus (-) denote descending order, while the others\nare ascending.\n
     # @option opts [String] :include Include a limited set of extra fields which are not found\nin the default response body\n- &#39;rooms&#39; include parameter will include\n   any additional rooms as a list.\n- &#39;pool&#39; includes an additional pool description\n- &#39;association&#39; includes additional home owners association data\n
     # @return [Array<Listing>]
-    def self.properties(opts = {})
+    def self.all(opts = {})
       if SimplyRets.configuration.debug
         SimplyRets.logger.debug "Calling API: DefaultApi#properties ..."
       end
@@ -106,7 +106,7 @@ module SimplyRets
     # @param listing_id A listings listingId (unique indentifier).
     # @param [Hash] opts the optional parameters
     # @return [Listing]
-    def self.property(listing_id, opts = {})
+    def self.retrieve(listing_id, opts = {})
       if SimplyRets.configuration.debug
         SimplyRets.logger.debug "Calling API: DefaultApi#property ..."
       end

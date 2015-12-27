@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class School < BaseObject
     attr_accessor :district, :elementary_school, :middle_school, :high_school

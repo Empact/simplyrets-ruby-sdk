@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Parking < BaseObject
     attr_accessor :spaces, :description, :leased

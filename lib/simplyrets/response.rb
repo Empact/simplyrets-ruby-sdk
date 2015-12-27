@@ -88,7 +88,7 @@ module SimplyRets
         end
       else
         # models, e.g. Pet
-        SimplyRetsClient.const_get(return_type).new.tap do |model|
+        SimplyRets.const_get(return_type).new.tap do |model|
           model.build_from_hash data
         end
       end

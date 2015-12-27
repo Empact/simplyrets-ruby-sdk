@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Broker < BaseObject
     attr_accessor :startdate

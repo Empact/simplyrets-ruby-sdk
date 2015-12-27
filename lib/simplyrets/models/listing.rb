@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Listing < BaseObject
     attr_accessor :property, :mls_id, :showing_instructions, :office, :disclaimer, :address, :list_date, :agent, :modified, :school, :sales, :photos, :list_price, :listing_id, :mls, :geo, :tax, :remarks, :private_remarks, :lease_term, :lease_type

@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class Agent < BaseObject
     attr_accessor :last_name, :contact, :first_name, :id

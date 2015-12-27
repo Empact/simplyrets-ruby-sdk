@@ -1,4 +1,4 @@
-module SimplyRetsClient
+module SimplyRets
   #
   class MlsInformation < BaseObject
     attr_accessor :status, :area, :days_on_market, :serving_name
